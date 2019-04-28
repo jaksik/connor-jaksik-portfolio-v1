@@ -1,0 +1,16 @@
+/* .about {
+    width: 56%;
+    padding: 4%;
+    float: left;
+}
+
+.portfolio-image {
+    width: 40%;
+    padding-top: 4%;
+    float: left;
+} */
+
+#borderLine {
+    margin: 25px 0px;
+    border-bottom: 2px solid black;
+}
