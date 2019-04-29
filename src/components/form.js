@@ -8,7 +8,7 @@ class Form extends Component {
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-            // style={{ width: `80%`, margin: `10px auto`, borderStyle: `ridge`, borderRadius: `25px`, backgroundColor: `white`, padding: `20px`, maxWidth: `600px` }}
+                style={{ width: `80%`, margin: `10px auto`, borderStyle: `ridge`, borderRadius: `25px`, backgroundColor: `white`, padding: `20px`, maxWidth: `600px` }}
             >
                 <input style={{ display: `none` }} type="text" /><br />
                 <h5 style={{ textAlign: `center`, color: `black` }}>Let's Get Started</h5>

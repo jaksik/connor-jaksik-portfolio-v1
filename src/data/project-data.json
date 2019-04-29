@@ -2,43 +2,49 @@
     {
         "title": "Limitless Wake Tech",
         "img": "limitless.png",
-        "description": "hello",
-        "url": "google.com",
-        "github": ""
+        "description": "The official site of Limitless Wake Technologies (wake board instructor for hire). Web site built with a React JS framework and hosted on Netlify.",
+        "url": "https://limitlesswake.com",
+        "github": "",
+        "id": "pone"
     },
     {
         "title": "Go Code Stuff",
         "img": "limitless.png",
-        "description": "hello",
-        "url": "",
-        "github": ""
-    },
+        "description": "A blazing fast blog about coding and emerging technologies. Powered by Gatsby JS, Graph QL and Mail Chimp.",
+        "url": "https://gocodestuff.com",
+        "github": "",
+        "id": "ptwo"
+        },
     {
-        "title": "Enchante",
+        "title": "Mountaineering Trivia",
         "img": "limitless.png",
-        "description": "hello",
+        "description": "An educational trivia game focusing on mountaineering. Powered by HTML5 and JavaScript.",
         "url": "",
-        "github": ""
-    },
+        "github": "",
+        "id": "pthree"
+        },
     {
         "title": "Zoo Snatch",
         "img": "limitless.png",
-        "description": "hello",
+        "description": "Choose your own adventure game with an RPG interactive experience. Built with a React framework, user auth implemented with Mongo DB and interactive experience made possible with the HTML5 canvas element.",
         "url": "",
-        "github": ""
-    },
+        "github": "",
+        "id": "pfour"
+        },
     {
-        "title": "",
+        "title": "Color Classifier",
         "img": "limitless.png",
-        "description": "hello",
+        "description": "A machine learning color classifier app that attempts to accurately place any chosen color in to one of nine categories. Powered by TensorFlow JS and inspired by The Coding Train from NYU.",
         "url": "",
-        "github": ""
-    },
+        "github": "",
+        "id": "pfive"
+        },
     {
-        "title": "",
+        "title": "Task Tracker SQL",
         "img": "limitless.png",
-        "description": "hello",
+        "description": "A 'To-Do' list application powered by MySQL.",
         "url": "",
-        "github": ""
-    }
+        "github": "",
+        "id": "psix"
+        }
 ]
