@@ -1,28 +1,16 @@
-#pone {
-    background-image: url("../images/projects/limitless.png");
-}
-
-#ptwo {
-    background-image: url("../images/projects/gocode.png");
-
-}
-
-#pthree {
-    background-image: url("../images/projects/mountaineering.png");
-
-}
-
-#pfour {
-    background-image: url("../images/projects/zoosnatch.png");
-
-}
-
-#pfive {
-    background-image: url("../images/projects/colorclassifier.png");
-
-}
-
-#psix {
-    background-image: url("../images/projects/tasktracker.png");
-
+.project-card {
+    width: 100%;
+    max-width: 320px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: left;
+    border: thin solid rgba(51,122,183,.1);
+    border-radius: 5px;
+    box-shadow: 0 12px 12px 0 #d3d3d3;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 300;
 }

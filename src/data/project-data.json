@@ -4,47 +4,41 @@
         "img": "limitless.png",
         "description": "The official site of Limitless Wake Technologies (wake board instructor for hire). Web site built with a React JS framework and hosted on Netlify.",
         "url": "https://limitlesswake.com",
-        "github": "",
-        "id": "pone"
+        "github": ""
     },
     {
         "title": "Go Code Stuff",
-        "img": "limitless.png",
+        "img": "gocode.png",
         "description": "A blazing fast blog about coding and emerging technologies. Powered by Gatsby JS, Graph QL and Mail Chimp.",
         "url": "https://gocodestuff.com",
-        "github": "",
-        "id": "ptwo"
-        },
+        "github": ""
+    },
     {
         "title": "Mountaineering Trivia",
-        "img": "limitless.png",
+        "img": "mountaineering.png",
         "description": "An educational trivia game focusing on mountaineering. Powered by HTML5 and JavaScript.",
         "url": "",
-        "github": "",
-        "id": "pthree"
-        },
+        "github": ""
+    },
     {
         "title": "Zoo Snatch",
-        "img": "limitless.png",
+        "img": "zoosnatch.png",
         "description": "Choose your own adventure game with an RPG interactive experience. Built with a React framework, user auth implemented with Mongo DB and interactive experience made possible with the HTML5 canvas element.",
         "url": "",
-        "github": "",
-        "id": "pfour"
-        },
+        "github": ""
+    },
     {
         "title": "Color Classifier",
-        "img": "limitless.png",
+        "img": "colorclassifier.png",
         "description": "A machine learning color classifier app that attempts to accurately place any chosen color in to one of nine categories. Powered by TensorFlow JS and inspired by The Coding Train from NYU.",
         "url": "",
-        "github": "",
-        "id": "pfive"
-        },
+        "github": ""
+    },
     {
         "title": "Task Tracker SQL",
-        "img": "limitless.png",
+        "img": "tasktracker.png",
         "description": "A 'To-Do' list application powered by MySQL.",
         "url": "",
-        "github": "",
-        "id": "psix"
-        }
+        "github": ""
+    }
 ]

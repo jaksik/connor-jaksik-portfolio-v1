@@ -1,8 +1,7 @@
 import React from "react"
 import SkillRow from "./skill-row"
 import data from "../data/skill-data.json"
-import { Container } from 'reactstrap';
-
+import { Container } from 'reactstrap'
 
 const skillContainer = () => (
             <Container>
