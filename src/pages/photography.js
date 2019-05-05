@@ -1,10 +1,16 @@
-// import React from "react"
+import React from "react"
 // import Section from "../components/section"
 // import photography from "../data/photography"
 // import Img from "gatsby-image";
 // import { graphql } from "gatsby"
 
+const page = () => (
+    <div>
+        <h1>Hello</h1>
+    </div>
+)
 
+export default page
 // const photographyPage = ({ data }) => {
 //     const { edges: ImgData } = data.ProjectImgs;
 
