@@ -1,6 +1,7 @@
 [
     {
         "title": "Limitless Wake Tech",
+        "category": "React",
         "img": "limitless.png",
         "description": "The official site of Limitless Wake Technologies (wake board instructor for hire). Web site built with a React JS framework and hosted on Netlify.",
         "url": "https://limitlesswake.com",
@@ -8,6 +9,7 @@
     },
     {
         "title": "Go Code Stuff",
+        "category": "React",
         "img": "gocode.png",
         "description": "A blazing fast blog about coding and emerging technologies. Powered by Gatsby JS, Graph QL and Mail Chimp.",
         "url": "https://gocodestuff.com",
@@ -15,6 +17,7 @@
     },
     {
         "title": "Mountaineering Trivia",
+        "category": "HTML",
         "img": "mountaineering.png",
         "description": "An educational trivia game focusing on mountaineering. Powered by HTML5 and JavaScript.",
         "url": "",
@@ -22,6 +25,7 @@
     },
     {
         "title": "Zoo Snatch",
+        "category": "Mongo DB",
         "img": "zoosnatch.png",
         "description": "Choose your own adventure game with an RPG interactive experience. Built with a React framework, user auth implemented with Mongo DB and interactive experience made possible with the HTML5 canvas element.",
         "url": "",
@@ -29,6 +33,7 @@
     },
     {
         "title": "Color Classifier",
+        "category": "TensorFlow",
         "img": "colorclassifier.png",
         "description": "A machine learning color classifier app that attempts to accurately place any chosen color in to one of nine categories. Powered by TensorFlow JS and inspired by The Coding Train from NYU.",
         "url": "",
@@ -36,6 +41,7 @@
     },
     {
         "title": "Task Tracker SQL",
+        "category": "MySQL",
         "img": "tasktracker.png",
         "description": "A 'To-Do' list application powered by MySQL.",
         "url": "",

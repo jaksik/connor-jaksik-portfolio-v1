@@ -1,0 +1,22 @@
+.faqItem {
+    border-bottom: 1px solid  #343a40;
+    padding: .5rem;    
+}
+
+.faqItem:hover{
+    background-color: #ece9e9;
+}
+
+.faqContainer {
+    max-width: 60%;
+    margin: 0 auto 30px;
+    border: 1px solid  #343a40;
+    background-color: #f6f6f6;
+    box-shadow: 0 -1px 4px #343a40;
+}
+
+@media only screen and (max-width: 768px) {
+    .faqContainer {
+        max-width: 80%;
+    }
+  }
