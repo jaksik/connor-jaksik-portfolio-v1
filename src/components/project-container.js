@@ -35,7 +35,7 @@ class ProjectContainer extends Component {
     render() {
         const projectImgs = this.props.projectImgs;
         return (
-            <div style={{ background: `#f6f6f6` }}>
+            <div id="projects" name="projects" style={{ background: `#f6f6f6` }}>
                 <Container>
                     <h2 style={{ textAlign: `center`, margin: `50px auto` }}>Some of My Work</h2>
                     <div style={{ padding: `0 20px` }}>

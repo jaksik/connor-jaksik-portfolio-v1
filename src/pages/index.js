@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <About />
+      <About/>
       <Projects projectImgs={projectImgData} />
       {/* <Services/>  */}
       <h2 style={{ textAlign: `center`, margin: `50px auto` }}>Contact</h2>
