@@ -5,7 +5,7 @@
         "img": "limitless.png",
         "description": "The official site of Limitless Wake Technologies (wake board instructor for hire). Web site built with a React JS framework and hosted on Netlify.",
         "url": "https://limitlesswake.com",
-        "github": ""
+        "github": "https://github.com/jaksik/limitless-wake"
     },
     {
         "title": "Go Code Stuff",
@@ -13,7 +13,7 @@
         "img": "gocode.png",
         "description": "A blazing fast blog about coding and emerging technologies. Powered by Gatsby JS, Graph QL and Mail Chimp.",
         "url": "https://gocodestuff.com",
-        "github": ""
+        "github": "https://github.com/jaksik/blog"
     },
     {
         "title": "Mountaineering Trivia",
@@ -28,8 +28,8 @@
         "category": "Mongo DB",
         "img": "zoosnatch.png",
         "description": "Choose your own adventure game with an RPG interactive experience. Built with a React framework, user auth implemented with Mongo DB and interactive experience made possible with the HTML5 canvas element.",
-        "url": "",
-        "github": ""
+        "url": "https://zoo-snatch.herokuapp.com",
+        "github": "https://github.com/jaksik/zoo-snatch"
     },
     {
         "title": "Color Classifier",

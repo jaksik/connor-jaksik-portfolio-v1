@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Form from "../components/form"
 import About from "../components/about"
 import Projects from "../components/project-container"
-import Services from "../components/services"
+import Services from "../components/services-item"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css"
 import { graphql } from "gatsby"

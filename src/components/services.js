@@ -1,9 +1,9 @@
 import React from 'react'
 import ServiceItem from "./services-item"
 import serviceData from "../data/services.json"
-import "./faq.css"
+import "./style.css"
 
-const FaqContainer = () => (
+const ServicesContainer = () => (
     <div style={{ backgroundColor: `white`, width: `100%`}}>
         <h2 style={{ textAlign: `center`}}>Web Services</h2>
         <div className="faqContainer">
@@ -18,4 +18,4 @@ const FaqContainer = () => (
     </div>
 )
 
-export default FaqContainer
+export default ServicesContainer

@@ -32,9 +32,20 @@ const header = ({ siteTitle }) => (
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={500}
+                duration={1000}
             >
                 Contact
+        </Link>
+        <Link
+                style={{ padding: "0 5px", color: "#6c8ca5", float: "right" }} title="github"
+                activeClass="active"
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={800}
+            >
+                Services
         </Link>
             <Link
                 style={{ padding: "0 5px", color: "#6c8ca5", float: "right" }} title="github"
@@ -54,7 +65,7 @@ const header = ({ siteTitle }) => (
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={800}
+                duration={500}
             >
                 About
         </Link>

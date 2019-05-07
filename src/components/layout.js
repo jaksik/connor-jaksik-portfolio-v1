@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Navbar from "./navbar"
 import CoverImg from "./cover-img"
-import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children }) => (
@@ -38,7 +37,17 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
         </div>
-        <Footer/>
+        <div style={{ height: `100px`, background: `#718190` }}>
+            <footer
+                style={{
+                    textAlign: `center`,
+                    width: `100%`
+                }}>
+                © {new Date().getFullYear()}, Built by
+    {` `}
+                Connor Jaksik
+      </footer>
+        </div>
       </>
     )}
   />
