@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import projects from "../data/project-data.json"
-import { Row, Col, Collapse } from 'reactstrap';
+import { Row, Col, Collapse } from 'reactstrap'
+import Img from "gatsby-image"
 import "./style.css"
-import Img from "gatsby-image";
 
 
 class ProjectContainer extends Component {

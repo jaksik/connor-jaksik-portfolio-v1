@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Navbar from "./navbar"
-import CoverImg from "./cover-img"
 import "./layout.css"
 
 const Layout = ({ children }) => (
@@ -26,7 +25,6 @@ const Layout = ({ children }) => (
     render={data => (
       <>
       <Navbar siteTitle={data.site.siteMetadata.title}/>
-        <CoverImg/>
         <div
           style={{
             margin: `0 auto`,
