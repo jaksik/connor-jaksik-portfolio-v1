@@ -20,8 +20,8 @@
         "category": "HTML",
         "img": "mountaineering.png",
         "description": "An educational trivia game focusing on mountaineering. Powered by HTML5 and JavaScript.",
-        "url": "",
-        "github": ""
+        "url": "https://jaksik.github.io/mountaineering-trivia/",
+        "github": "https://github.com/jaksik/mountaineering-trivia"
     },
     {
         "title": "Zoo Snatch",
@@ -36,15 +36,15 @@
         "category": "TensorFlow",
         "img": "colorclassifier.png",
         "description": "A machine learning color classifier app that attempts to accurately place any chosen color in to one of nine categories. Powered by TensorFlow JS and inspired by The Coding Train from NYU.",
-        "url": "",
-        "github": ""
+        "url": "https://jaksik.github.io/ml-color-classifier/",
+        "github": "https://github.com/jaksik/ml-color-classifier"
     },
     {
         "title": "Task Tracker SQL",
         "category": "MySQL",
         "img": "tasktracker.png",
         "description": "A 'To-Do' list application powered by MySQL.",
-        "url": "",
-        "github": ""
+        "url": "https://task-tracker-sql.herokuapp.com/",
+        "github": "https://github.com/jaksik/task-tracker-sql"
     }
 ]

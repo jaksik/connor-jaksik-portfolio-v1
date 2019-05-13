@@ -10,8 +10,9 @@ class Collapse extends Component {
         this.Images = this.props.photographyImgs;
         this.toggle = this.toggle.bind(this);
         this.state = {
-            open: false
+            open: true
         }
+        console.log("images", this.Images)
     }
 
     toggle() {
@@ -22,26 +23,35 @@ class Collapse extends Component {
     render() {
         const projectImgs = this.props.photographyImgs;
         return (
-            <div onClick={this.toggle} className={'collapsible ' + (this.state.open ? 'active' : '')}>
-                <div className="content" style={(this.state.open ? { maxHeight: `0px` } : { maxHeight: `1000px` })}>
-                    <div><h2>Free Photos</h2></div>
+            <div
+                id="photos"
+            >
+                <div onClick={this.toggle} className={'collapsible ' + (this.state.open ? 'active' : '')}>
+                    <h2 style={{ textAlign: `center`}}>Free Photos</h2>
+                </div>
+                <div className="content" style={(this.state.open ? { height: `0px` } : { height: `auto` })}>
+                    <div>
+                    <p style={{ color: `white`, backgroundColor: `black`, textAlign: `center`}}>You can't put a price on beauty, feel free to download and use these photos in your next project or how ever you wish.</p>
+                    </div>
                     <Row>
-                    {photoData.map(photo => {
-                        const image = projectImgs.find(n => {
-                            return n.node.relativePath === `photography/${photo.file}`;
-                        });
-                        const imageSizes = image.node.childImageSharp.sizes;
-                        return (
-                            <Col xs="12" sm="6" md="4">
-                                <Img
-                                    title="hello"
-                                    alt="Screenshot of Project"
-                                    sizes={imageSizes}
-                                    className="card-img_src center-block"
-                                />
-                            </Col>
-                        )
-                    })}
+                        {photoData.map(photo => {
+                            const image = projectImgs.find(n => {
+                                return n.node.relativePath === `photography/${photo.file}`;
+                            });
+                            const imageSizes = image.node.childImageSharp.sizes;
+                            console.log(imageSizes)
+                            return (
+                                <Col xs="12" sm="6" md="4">
+                                    <Img
+                                        title="hello"
+                                        alt="Screenshot of Project"
+                                        sizes={imageSizes}
+                                        className="card-img_src center-block photography-img"
+                                    />
+                                    {/* <a href={"../images/photography/" + photo.file} download><button>DownLoad Image</button></a> */}
+                                </Col>
+                            )
+                        })}
                     </Row>
                 </div>
             </div>

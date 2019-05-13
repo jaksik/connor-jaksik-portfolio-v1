@@ -79,8 +79,8 @@ class ProjectContainer extends Component {
                                         <div style={{ borderTop: `4px solid #718190` }}>
                                             <h5>{project.title}</h5>
                                             <p>{project.description}</p>
-                                            <strong><a href={project.url}>Demo</a></strong><br/>
-                                            <strong><a href={project.github}>Source Code</a></strong>
+                                            <strong><a href={project.url} target="_blank">Demo</a></strong><br/>
+                                            <strong><a href={project.github} target="_blank">Source Code</a></strong>
                                         </div>
                                     </div>
                                 </Col>

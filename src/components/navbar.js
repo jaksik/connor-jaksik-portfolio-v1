@@ -39,13 +39,13 @@ const header = ({ siteTitle }) => (
         <Link
                 style={{ padding: "0 5px", color: "#6c8ca5", float: "right" }} title="github"
                 activeClass="active"
-                to="services"
+                to="photos"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={800}
             >
-                Services
+                Photos
         </Link>
             <Link
                 style={{ padding: "0 5px", color: "#6c8ca5", float: "right" }} title="github"

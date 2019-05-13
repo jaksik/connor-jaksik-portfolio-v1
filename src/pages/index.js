@@ -23,9 +23,9 @@ const IndexPage = ({ data }) => {
       <About/>
       <Projects projectImgs={projectImgData} />
       {/* <Services/>  */}
+      <Collapsible photographyImgs={photographyImgData}/>
       <h2 style={{ textAlign: `center`, margin: `50px auto` }}>Contact</h2>
       <Form />
-      {/* <Collapsible photographyImgs={photographyImgData}/> */}
     </Layout>
   )
 }
