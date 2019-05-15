@@ -53,13 +53,13 @@
     overflow: hidden;
     transition: max-height 0.5s ease-out;
     /* background-color: rgb(70, 67, 67); */
-    background-color: #d7d7d7;
+    /* background-color: #d7d7d7; */
     margin: 0 auto;
   }
 
 .photography-img {
   margin: 5px 0px;
-  border: 10px solid black;
+  /* border: 10px solid black; */
 }
 
 

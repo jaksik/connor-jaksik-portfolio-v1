@@ -31,9 +31,11 @@ class Collapse extends Component {
                 </div>
                 <div className="content" style={(this.state.open ? { height: `0px` } : { height: `auto` })}>
                     <div>
-                    <p style={{ color: `white`, backgroundColor: `black`, textAlign: `center`}}>You can't put a price on beauty, feel free to download and use these photos in your next project or how ever you wish.</p>
+                    <p style={{ color: `white`, backgroundColor: `black`, textAlign: `center`}}>Download and use these photos for free in your next project or how ever you wish.</p>
                     </div>
-                    <Row>
+                    <Row
+                        style={{ padding: `0px 1.0875rem 1.45rem` }}
+                    >
                         {photoData.map(photo => {
                             const image = projectImgs.find(n => {
                                 return n.node.relativePath === `photography/${photo.file}`;
