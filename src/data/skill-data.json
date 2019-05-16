@@ -1,15 +1,15 @@
 [
     {
-        "title": "Front-end Skills",
-        "items": ["HTML5", "CSS3", "JavaScript", "ReactJS"]
+        "title": "Front-end",
+        "items": ["HTML5", "CSS3", "JavaScript", "ReactJS", "GraphQL", "GatsbyJS", "jQuery", "Bootstrap"]
     }
     ,
     {
-        "title": "Back-end Skills",
-        "items": ["NodeJS", "Express", "Mongo DB", "MySql"]
+        "title": "Back-end",
+        "items": ["NodeJS", "Express", "PHP", "Mongo DB", "MySql"]
     },
     {
         "title": "Learning",
-        "items": ["GatsbyJS", "AWS Solutions Architect", "Graph QL", "Python"]
+        "items": ["AWS Solutions Architect", "AWS Dev Ops Engineer", "Python", "C ++", "Swift"]
     }
 ]
