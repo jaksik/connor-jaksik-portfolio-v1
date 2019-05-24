@@ -25,6 +25,7 @@ const BackgroundSection = ({ className }) => (
           fluid={imageData}
           backgroundColor={`#040e18`}
           style={{ minHeight: `700px`, color: `white` }}
+          id="background-image"
         >
           <h1
             style={{

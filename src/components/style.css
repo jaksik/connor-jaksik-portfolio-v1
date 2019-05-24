@@ -1,3 +1,13 @@
+.nav-item {
+  float: right;
+}
+
+.nav-item:hover  {cursor: pointer;}
+
+#heading {
+  text-align: center;
+}
+
 .project-card {
     width: 100%;
     max-width: 320px;
@@ -15,16 +25,16 @@
     font-weight: 300;
 }
 
-.faqItem {
+.service-item {
     border-bottom: 1px solid  #343a40;
     padding: .5rem;    
 }
 
-.faqItem:hover{
+.service-item:hover{
     background-color: #ece9e9;
 }
 
-.faqContainer {
+.services-container {
     max-width: 60%;
     margin: 0 auto 30px;
     border: 1px solid  #343a40;
@@ -32,7 +42,7 @@
     box-shadow: 0 -1px 4px #343a40;
 }
 
-.collapsible {
+.photography-header {
     background-color: black;
     color: white;
     cursor: pointer;
@@ -43,28 +53,60 @@
     outline: none;
     font-size: 15px;
   }
-  
-  /* .collapsible:hover {
-    background-color: #555;
-  } */
 
-.content {
-    /* padding: 0 18px; */
+.gallery {
     overflow: hidden;
     transition: max-height 0.5s ease-out;
-    /* background-color: rgb(70, 67, 67); */
-    /* background-color: #d7d7d7; */
     margin: 0 auto;
   }
 
 .photography-img {
   margin: 5px 0px;
-  /* border: 10px solid black; */
 }
 
+.x-icon {
+  cursor: pointer;
+  float: right;
+  padding-top: -30px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
 
 @media only screen and (max-width: 768px) {
     .faqContainer {
         max-width: 80%;
+    }
+
+    h2 {
+      text-align: center;
+    }
+    
+    .nav-item {
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #nav-items {
+      text-align: center;
+      margin-top: 10px;
     }
   }

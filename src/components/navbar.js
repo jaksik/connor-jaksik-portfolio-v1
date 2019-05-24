@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-scroll";
+import "./style.css"
 
 const header = ({ siteTitle }) => (
     <header
@@ -17,6 +18,8 @@ const header = ({ siteTitle }) => (
             <h2 style={{ margin: 0 }}>
                 <Link
                     href="/"
+                    id="heading"
+                    className="nav-title"
                     style={{
                         color: `#718190`,
                         textDecoration: `none`,
@@ -25,50 +28,56 @@ const header = ({ siteTitle }) => (
                     {siteTitle}
                 </Link>
             </h2>
-            <Link
-                style={{ padding: "0 5px", color: "#6c8ca5", float: "right" }} title="github"
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={1000}
-            >
-                Contact
-        </Link>
-        <Link
-                style={{ padding: "0 5px", color: "#6c8ca5", float: "right" }} title="github"
-                activeClass="active"
-                to="photos"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={800}
-            >
-                Photos
-        </Link>
-            <Link
-                style={{ padding: "0 5px", color: "#6c8ca5", float: "right" }} title="github"
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-            >
-                Projects
-        </Link>
-            <Link
-                style={{ padding: "0 5px", color: "#6c8ca5", float: "right" }} title="github"
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-            >
-                About
-        </Link>
+            <div id="nav-items">
+                <Link
+                    style={{ padding: "0 5px", color: "#6c8ca5" }}
+                    activeClass="active"
+                    to="contact"
+                    className="nav-item"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={1000}
+                >
+                    Contact
+                </Link>
+                <Link
+                    style={{ padding: "0 5px", color: "#6c8ca5" }}
+                    activeClass="active"
+                    to="photos"
+                    className="nav-item"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={800}
+                >
+                    Photos
+                </Link>
+                <Link
+                    style={{ padding: "0 5px", color: "#6c8ca5" }}
+                    activeClass="active"
+                    to="projects"
+                    className="nav-item"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >
+                    Projects
+                </Link>
+                <Link
+                    style={{ padding: "0 5px", color: "#6c8ca5" }}
+                    activeClass="active"
+                    to="about"
+                    className="nav-item"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >
+                    About
+                </Link>
+            </div>
         </div>
     </header>
 )

@@ -2,30 +2,32 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CoverImg from "../components/cover-img"
-import Form from "../components/form"
+import Contact from "../components/contact"
 import About from "../components/about"
 import Projects from "../components/project-container"
-import Collapsible from "../components/collapse"
-import Services from "../components/services-item"
+import Photos from "../components/photography"
+import Services from "../components/services"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css"
 import { graphql } from "gatsby"
 
 const IndexPage = ({ data }) => {
+
+  //Using the images we queried below
+  //Project Images
   const { edges: projectImgData } = data.ProjectImgs;
+  //Photography Images
   const { edges: photographyImgData } = data.Photography;
 
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      {/* <PhotoBox/> */}
+      <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
       <CoverImg/>
       <About/>
       <Projects projectImgs={projectImgData} />
       {/* <Services/>  */}
-      <Collapsible photographyImgs={photographyImgData}/>
-      <h2 style={{ textAlign: `center`, margin: `50px auto` }}>Contact</h2>
-      <Form />
+      <Photos photographyImgs={photographyImgData}/>
+      <Contact />
     </Layout>
   )
 }

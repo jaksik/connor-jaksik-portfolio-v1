@@ -1,15 +1,14 @@
 [
     {
-        "title": "Front-end",
-        "items": ["HTML5", "CSS3", "JavaScript", "ReactJS", "GraphQL", "GatsbyJS", "jQuery", "Bootstrap"]
-    }
-    ,
+        "title": "Front-End",
+        "items": ["HTML5", "CSS3", "JavaScript", "React JS", "jQuery", "Bootstrap", "Firebase"]
+    },
     {
-        "title": "Back-end",
-        "items": ["NodeJS", "Express", "PHP", "Mongo DB", "MySql"]
+        "title": "Back-End",
+        "items": ["Node JS", "Express", "PHP", "MySQL", "MongoDB", "AWS", "GraphQL"]
     },
     {
         "title": "Learning",
-        "items": ["AWS Solutions Architect", "AWS Dev Ops Engineer", "Python", "C ++", "Swift"]
+        "items": ["Python", "C ++", ".NET", "React Native"]
     }
 ]
