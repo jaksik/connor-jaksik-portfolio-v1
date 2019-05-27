@@ -2,7 +2,9 @@
   float: right;
 }
 
-.nav-item:hover  {cursor: pointer;}
+.nav-item:hover  {
+  cursor: pointer;
+}
 
 #heading {
   text-align: center;
@@ -68,12 +70,13 @@
   cursor: pointer;
   float: right;
   padding-top: -30px;
+  display: none;
 }
 
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: white;
+  background-color: black;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -105,8 +108,17 @@
       text-align: center;
     }
 
-    #nav-items {
+    .nav-itemss {
       text-align: center;
       margin-top: 10px;
+      display: none;
+    }
+
+    .nav-itemss .change {
+      display: block;
+    }
+
+    .x-icon {
+      display: block;
     }
   }

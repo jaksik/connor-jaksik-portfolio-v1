@@ -3,6 +3,7 @@ import { Row, Col } from 'reactstrap'
 import Img from "gatsby-image";
 import photoData from "../data/photography"
 import "./style.css"
+import Image from "./img-container"
 
 class Photography extends Component {
     constructor(props) {
@@ -63,16 +64,17 @@ class Photography extends Component {
                             const image = projectImgs.find(n => {
                                 return n.node.relativePath === `photography/${photo.file}`;
                             });
+                            let imgOpen = false;
                             const imageSizes = image.node.childImageSharp.sizes;
+
+                            this.imgeToggle = () => {
+                                imgOpen = true;
+                            }
                             return (
                                 <Col xs="12" sm="6" md="4">
-                                    <Img
-                                        title="photography"
-                                        alt="Screenshot of Project"
-                                        sizes={imageSizes}
-                                        className="card-img_src center-block photography-img"
-                                    />
+                                    <Image imageSizes={imageSizes}/>
                                     {/* <a href={"../images/photography/" + photo.file} download><button>DownLoad Image</button></a> */}
+                                    {/*modal will go here to enlarge imge*/}
                                 </Col>
                             )
                         })}
