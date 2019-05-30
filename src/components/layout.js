@@ -24,7 +24,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-      <Navbar siteTitle={data.site.siteMetadata.title}/>
+        <Navbar siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
             margin: `0 auto`,
@@ -35,16 +35,23 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
         </div>
-        <div style={{ height: `100px`, background: `#718190` }}>
-            <footer
-                style={{
-                    textAlign: `center`,
-                    width: `100%`
-                }}>
-                © {new Date().getFullYear()}, Built by
+        <div style={{ 
+                height: `100px`, 
+                background: `#718190`, 
+                color: `white`,
+                paddingTop: `20px` 
+              }}>
+          <footer
+            style={{
+              textAlign: `center`,
+              width: `100%`
+            }}>
+            <strong>
+              © {new Date().getFullYear()}, Built by
     {` `}
-                Connor Jaksik
-      </footer>
+              Connor Jaksik
+            </strong>
+          </footer>
         </div>
       </>
     )}

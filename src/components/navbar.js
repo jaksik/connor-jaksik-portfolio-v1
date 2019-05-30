@@ -42,7 +42,7 @@ class Header extends Component {
                             {this.props.siteTitle}
                         </Link>
                     </h2>
-                    <div id="nav-items" className={'nav-itemss ' + (this.state.open ? '' : 'change')}>
+                    <div id="nav-items" className={'nav-items ' + (this.state.open ? '' : 'change')}>
                         <Link
                             style={{ padding: "0 5px", color: "#6c8ca5" }}
                             activeClass="active"

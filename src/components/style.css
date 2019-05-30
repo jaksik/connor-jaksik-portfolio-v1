@@ -73,12 +73,20 @@
   display: none;
 }
 
+.icon {
+  display: inline;
+}
+
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: #718190;
   margin: 6px 0;
   transition: 0.4s;
+}
+
+.bar {
+  background-color: white;
 }
 
 .change .bar1 {
@@ -108,13 +116,13 @@
       text-align: center;
     }
 
-    .nav-itemss {
+    .nav-items {
       text-align: center;
       margin-top: 10px;
       display: none;
     }
 
-    .nav-itemss .change {
+    .change {
       display: block;
     }
 

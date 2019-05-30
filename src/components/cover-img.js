@@ -24,7 +24,7 @@ const BackgroundSection = ({ className }) => (
           className={className}
           fluid={imageData}
           backgroundColor={`#040e18`}
-          style={{ minHeight: `700px`, color: `white` }}
+          style={{  color: `white` }}
           id="background-image"
         >
           <h1
@@ -33,6 +33,7 @@ const BackgroundSection = ({ className }) => (
               maxWidth: 960,
               padding: `0px 1.0875rem 1.45rem`,
               paddingTop: 0,
+              textAlign: `right`
             }}>
             Web Development<br />for the<br />Modern Web by<br />Connor Jaksik
           </h1>

@@ -32,11 +32,11 @@ class Photography extends Component {
 
                     {/* this makes the collapsable x icon */}
                     <Row justify="center" >
-                        <Col xs="12" justify="center" style={{ margin: `0 auto`, maxWidth: `none` }}>
-                            <div className={'x-icon ' + (this.state.open ? '' : 'change')} onClick={this.toggle}>
-                                <div className="bar1"></div>
-                                <div className="bar2"></div>
-                                <div className="bar3"></div>
+                        <Col xs="8" justify="center" style={{ margin: `0 auto`, maxWidth: `none` }}>
+                            <div className={'icon x-icon ' + (this.state.open ? '' : 'change')} onClick={this.toggle}>
+                                <div className="bar1 bar"></div>
+                                <div className="bar2 bar"></div>
+                                <div className="bar3 bar"></div>
                             </div>
                         </Col>
                     </Row>
