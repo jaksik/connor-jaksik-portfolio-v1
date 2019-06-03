@@ -33,7 +33,7 @@ const BackgroundSection = ({ className }) => (
               maxWidth: 960,
               padding: `0px 1.0875rem 1.45rem`,
               paddingTop: 0,
-              textAlign: `right`
+              textAlign: `left`
             }}>
             Web Development<br />for the<br />Modern Web by<br />Connor Jaksik
           </h1>
@@ -45,9 +45,12 @@ const BackgroundSection = ({ className }) => (
 )
 
 const StyledBackgroundSection = styled(BackgroundSection)`
+  background-attachment: fixed;
   width: 100%;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center; 
+
 `
 
 export default StyledBackgroundSection
