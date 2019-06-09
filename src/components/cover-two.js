@@ -8,7 +8,7 @@ import ScrollAnimate from './scroll-animate'
 const BackgroundSection = ({ className }) => (
     <StaticQuery query={graphql`
       query {
-        desktop: file(relativePath: { eq: "mountain-top.jpg" }) {
+        desktop: file(relativePath: { eq: "limitless.png" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {
               ...GatsbyImageSharpFluid_withWebp
@@ -25,11 +25,9 @@ const BackgroundSection = ({ className }) => (
                            className={className}
                            fluid={imageData}
                            backgroundColor={`#040e18`}
-                           style= {{ position: `fixed`}}
+                         
           >
-             <ScrollAnimate
-             speed={1}
-             >
+             <ScrollAnimate>
              <h1
               style={{
               margin: `150px auto`,
@@ -54,7 +52,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-position: top center;
   background-repeat: repeat-y;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   z-index: -1;
   height: -webkit-fill-available;
 `

@@ -43,7 +43,7 @@ class ProjectContainer extends Component {
                     paddingTop: 0,
                 }}
                 >
-                    <h2 style={{ textAlign: `center`, margin: `50px auto` }}>Some of My Work</h2>
+                    <h2 style={{ textAlign: `center`, margin: `0px auto` }}>Some of My Work</h2>
                     <div style={{ padding: `0 20px` }}>
                         <Row>
                             <button onClick={this.toggleFilter}>Filter Projects</button>

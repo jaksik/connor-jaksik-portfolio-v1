@@ -5,7 +5,7 @@ class Form extends Component {
         return (
             <div>
 
-                <h2 style={{ textAlign: `center`, margin: `50px auto` }}>Contact</h2>
+                <h2 style={{ textAlign: `center` }}>Contact</h2>
 
                 <form
                     name="contact"

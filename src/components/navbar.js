@@ -19,7 +19,11 @@ class Header extends Component {
         return (
             <header
                 style={{
-                    background: `white`,
+                    width: `100%`,
+                    background: `rgba(255, 255, 255, 0.52)`,
+                    position: `absolute`,
+                    position: `fixed`,
+                    zIndex: `1`
                 }}
             >
                 <div

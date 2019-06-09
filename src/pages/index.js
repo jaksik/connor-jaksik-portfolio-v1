@@ -2,8 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CoverImg from "../components/cover-img"
+import CoverTwo from "../components/cover-two"
+import ScrollAnimate from "../components/scroll-animate"
 import Contact from "../components/contact"
 import About from "../components/about"
+import SkillContainer from "../components/skill-container"
 import Projects from "../components/project-container"
 import Photos from "../components/photography"
 import Services from "../components/services"
@@ -22,12 +25,32 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
-      <CoverImg/>
-      <About/>
+      <ScrollAnimate
+      speed={6}
+      >
+      <CoverImg />
+
+      </ScrollAnimate>
+
+      <div style={{ marginTop: `` }}>
+      </div>
+
+      <div
+        style={{
+          width: `100%`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0), rgb(246, 246, 246))`,
+          marginBottom: `-25px`,
+        }}>
+        <About />
+        <SkillContainer />
+      </div>
       <Projects projectImgs={projectImgData} />
       {/* <Services/>  */}
-      <Photos photographyImgs={photographyImgData}/>
-      <Contact />
+      {/* <Photos photographyImgs={photographyImgData} /> */}
+          <div style={{ background: `white`}}>
+          <Contact />
+
+          </div>
     </Layout>
   )
 }

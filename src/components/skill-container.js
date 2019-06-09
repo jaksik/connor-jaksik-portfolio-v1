@@ -3,7 +3,7 @@ import data from "../data/skill-data.json"
 import { Container, Row, Col } from 'reactstrap'
 
 const skillContainer = () => (
-    <Container>
+    <Container style={{ background: `rgba(255, 255, 255, 0.9)`}}>
         <h2 style={{ textAlign: `center`, marginBottom: `25px` }}>Technical Skills</h2>
         {data.map(category => (
             <>
