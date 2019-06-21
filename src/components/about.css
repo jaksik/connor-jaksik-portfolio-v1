@@ -1,7 +1,26 @@
+#about {
+    margin: 95vh auto 0;
+    padding: 0px 1.0875rem 1.45rem;
+    width: 100%;
+    z-index: 1;
+}
+
+#button-container {
+    width: 50%;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 40px;
+    z-index: 1;
+}
+
+#resume-button {
+    width: 100%;
+    margin: 0px auto;
+}
+
 .pro-img {
     margin: 0 auto;
     max-width: 300px;
-    height: 400px;
 }
 
 
@@ -9,10 +28,19 @@
     .pro-img {
       margin-top: 80px;
     }
+
+    #button-container {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 576px){
     .pro-img {
         margin-top: 100px;
+    }
+
+    #button-container {
+        width: 80%;
+        margin: -20px auto 60px;
     }
 }

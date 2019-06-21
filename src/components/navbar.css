@@ -1,0 +1,31 @@
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.52);
+    position: absolute;
+    position: fixed;
+    z-index: 1;
+    padding: 1.45rem 0 0;
+    color: #718190;
+}
+
+.nav-item {
+    padding: 0 5px;
+    color: #6c8ca5;
+    float: right;
+}
+
+.nav-item:hover  {
+    cursor: pointer;
+}
+
+#heading {
+    text-align: left;
+    text-decoration: none;
+    color: #718190;
+}
+
+@media only screen and (max-width: 768px) {
+    #heading {
+        text-align: center;
+    }
+}

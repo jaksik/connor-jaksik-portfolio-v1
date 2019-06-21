@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Img from "gatsby-image"
-import './img.css'
+import './img-container.css'
 
 class Photo extends Component {
     constructor(props) {

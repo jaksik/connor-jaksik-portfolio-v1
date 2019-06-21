@@ -1,60 +1,57 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CoverImg from "../components/cover-img"
-import CoverTwo from "../components/cover-two"
 import ScrollAnimate from "../components/scroll-animate"
-import Contact from "../components/contact"
-import About from "../components/about"
-import SkillContainer from "../components/skill-container"
-import Projects from "../components/project-container"
-import Photos from "../components/photography"
-import Services from "../components/services"
+
+import About from "../components/about-section"
+import SkillContainer from "../components/skill-section"
+import Projects from "../components/project-section"
+import Photos from "../components/photography-section"
+import Services from "../components/services-section"
+import ContactSection from "../components/contact-section"
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css"
-import { graphql } from "gatsby"
 
 const IndexPage = ({ data }) => {
 
-  //Using the images we queried below
-  //Project Images
+  //Project Image data from query below
   const { edges: projectImgData } = data.ProjectImgs;
-  //Photography Images
+
+  //Photography Image data from query below
   const { edges: photographyImgData } = data.Photography;
 
   return (
     <Layout>
-      <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
-      <ScrollAnimate
-      speed={6}
-      >
-      <CoverImg />
 
+      {/* SEO keywords */}
+      <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
+
+      {/* Cover Image */}
+      <ScrollAnimate speed={6}>
+        <CoverImg />
       </ScrollAnimate>
 
-      <div style={{ marginTop: `` }}>
-      </div>
-
-      <div
-        style={{
-          width: `100%`,
-          backgroundImage: `linear-gradient(rgba(0,0,0,0), rgb(246, 246, 246))`,
-          marginBottom: `-25px`,
-        }}>
+      {/* About Section */}
+      <div className="section-one">
         <About />
-        <SkillContainer />
       </div>
-      <Projects projectImgs={projectImgData} />
-      {/* <Services/>  */}
-      {/* <Photos photographyImgs={photographyImgData} /> */}
-          <div style={{ background: `white`}}>
-          <Contact />
 
-          </div>
+      {/* Projects Section */}
+      <Projects projectImgs={projectImgData} />
+
+      {/* Services I provide for full stack web development */}
+
+      {/* <Photos photographyImgs={photographyImgData} /> */}
+
+      {/* Contact Section */}
+        <ContactSection/>
+
     </Layout>
   )
 }
-
 
 export default IndexPage
 

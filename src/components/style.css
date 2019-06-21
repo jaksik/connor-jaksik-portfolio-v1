@@ -1,15 +1,3 @@
-.nav-item {
-  float: right;
-}
-
-.nav-item:hover  {
-  cursor: pointer;
-}
-
-#heading {
-  text-align: center;
-}
-
 .project-card {
     width: 100%;
     max-width: 320px;

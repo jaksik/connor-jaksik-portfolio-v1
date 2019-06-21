@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import Cover from "./cover-img"
 import "./style.css"
 
 class ScrollAnimate extends Component {
@@ -7,7 +6,7 @@ class ScrollAnimate extends Component {
         super(props);
         this.props = props;
         this.handleScroll = this.handleScroll.bind(this);
-        this.state={
+        this.state = {
             animate: null,
         }
     }
@@ -17,7 +16,7 @@ class ScrollAnimate extends Component {
     }
 
     componentWillUnmount() {
-        this.state.animate=null
+        this.state.animate = null
     }
 
     handleScroll = (e) => {
@@ -29,13 +28,11 @@ class ScrollAnimate extends Component {
     render() {
 
         return (
-            <div className="animate" ref="animate" style={{ position: `relative`}} >
-                <div style={{ position: `absolute`, width: `100%`, height: `120vh` }}>
-                    {this.props.children}
-                </div>
-                <div style={{ width: `100%` }}>
-                    <h1>.</h1>
-                </div>
+            <div className="animate" ref="animate" style={{ position: `relative` }} >
+
+                {/* Where props.children is animated to move */}
+                {this.props.children}
+                <h1 style={{ color: `transparent`, marginBottom: `-80px` }}> .</h1>
             </div>
         )
     }

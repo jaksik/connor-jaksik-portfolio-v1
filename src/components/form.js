@@ -4,11 +4,10 @@ class Form extends Component {
     render() {
         return (
             <div>
+                <h2>Contact</h2>
 
-                <h2 style={{ textAlign: `center` }}>Contact</h2>
-
+                {/* The contact form */}
                 <form
-                    name="contact"
                     method="post"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
