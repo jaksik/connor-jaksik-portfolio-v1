@@ -4,6 +4,12 @@
     z-index: 1;
 }
 
+#events {
+    margin: 0 auto 0;
+    width: 100%;
+    z-index: 1;
+}
+
 #about-background {
     background-image: linear-gradient(rgba(0,0,0,0), rgb(246, 246, 246));
 }
