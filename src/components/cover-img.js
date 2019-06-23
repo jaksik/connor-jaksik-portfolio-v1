@@ -25,7 +25,7 @@ const BackgroundSection = ({ className }) => (
                            className={className}
                            fluid={imageData}
                            backgroundColor={`#040e18`}
-                           style= {{ position: `fixed`}}
+                           style= {{position: `fixed`, zIndex: `-1`}}
           >
              <ScrollAnimate
              speed={1}
@@ -39,7 +39,7 @@ const BackgroundSection = ({ className }) => (
               textAlign: `left`,
               color: `white`
             }}>
-            Web Development<br />for the<br />Modern Web by<br />Connor Jaksik
+            Full Stack<br/> Development<br /> by<br />Connor Jaksik
           </h1>
              </ScrollAnimate>
           </BackgroundImage>
@@ -54,8 +54,6 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-position: top center;
   background-repeat: repeat-y;
   background-size: cover;
-  position: fixed;
-  z-index: -1;
   height: -webkit-fill-available;
 `
 

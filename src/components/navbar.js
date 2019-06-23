@@ -1,16 +1,34 @@
 import React, { Component } from "react"
 import { Link } from "react-scroll"
-import Section from "./container"
+import Section from "./section"
 import "./navbar.css"
-import "./style.css"
 
 class Header extends Component {
     constructor(props) {
         super(props);
+        this.props = props;
         this.toggle = this.toggle.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
         this.state = {
-            open: true
+            open: true,
+            animate: null,
         }
+    }
+
+    // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_hide_scroll
+
+    componentDidMount() {
+        window.addEventListener('scroll', e => this.handleScroll(e));
+    }
+
+    componentWillUnmount() {
+        this.state.animate = null
+    }
+
+    handleScroll = (e) => {
+        this.state.animate = this.refs.animate
+        let yPosition = (String(e.currentTarget.scrollY / this.props.speed) + "px")
+        this.state.animate.style.top = yPosition
     }
 
     toggle() {
@@ -19,7 +37,8 @@ class Header extends Component {
 
     render() {
         return (
-            <header>
+            <div className="animate" ref="animate">
+                <header id="nav-bar">
                     <Section>
 
                         <h2 id="nav-heading" style={{ margin: 0, padding: 0 }}>
@@ -76,6 +95,7 @@ class Header extends Component {
 
                     </Section>
             </header>
+            </div>
         )
     }
 }

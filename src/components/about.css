@@ -1,8 +1,11 @@
 #about {
-    margin: 95vh auto 0;
-    padding: 0px 1.0875rem 1.45rem;
+    margin: 0 auto 0;
     width: 100%;
     z-index: 1;
+}
+
+#about-background {
+    background-image: linear-gradient(rgba(0,0,0,0), rgb(246, 246, 246));
 }
 
 #button-container {
@@ -19,7 +22,7 @@
 }
 
 .pro-img {
-    margin: 0 auto;
+    margin: 50px auto 0;
     max-width: 300px;
 }
 

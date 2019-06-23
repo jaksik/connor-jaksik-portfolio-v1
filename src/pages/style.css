@@ -10,8 +10,9 @@ h2 {
 
 .section-one {
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0), rgb(246, 246, 246));
     margin-bottom: -25px;
+    padding: 90vh 0 0;
+
 }
 
 /* Contact form styling */

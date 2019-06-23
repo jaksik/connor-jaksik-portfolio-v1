@@ -4,7 +4,7 @@ import data from "../data/skill-data.json"
 
 const skillContainer = () => (
     <div className="skill-section">
-        <Container style={{ background: `rgba(255, 255, 255, 0.9)` }}>
+        <Container style={{ background: `rgba(255, 255, 255, 0.9)`, borderRadius: `25px`, marginBottom: `25px` }}>
 
             <h2>Technical Skills</h2>
             {data.map(category => (

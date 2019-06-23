@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Navbar from "./navbar"
+import CoverImg from "./cover-img"
 import "./layout.css"
 
 const Layout = ({ children }) => (

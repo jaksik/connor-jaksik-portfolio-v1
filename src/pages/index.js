@@ -3,10 +3,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CoverImg from "../components/cover-img"
-import ScrollAnimate from "../components/scroll-animate"
 
 import About from "../components/about-section"
-import SkillContainer from "../components/skill-section"
 import Projects from "../components/project-section"
 import Photos from "../components/photography-section"
 import Services from "../components/services-section"
@@ -30,24 +28,25 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
 
       {/* Cover Image */}
-      <ScrollAnimate speed={6}>
-        <CoverImg />
-      </ScrollAnimate>
+      <CoverImg />
 
       {/* About Section */}
       <div className="section-one">
         <About />
       </div>
 
-      {/* Projects Section */}
-      <Projects projectImgs={projectImgData} />
+      <div style={{ background: `white` }}>
 
-      {/* Services I provide for full stack web development */}
+        {/* Projects Section */}
+        <Projects projectImgs={projectImgData} />
 
-      {/* <Photos photographyImgs={photographyImgData} /> */}
+        {/* Services I provide for full stack web development */}
 
-      {/* Contact Section */}
-        <ContactSection/>
+        {/* <Photos photographyImgs={photographyImgData} /> */}
+
+        {/* Contact Section */}
+        <ContactSection />
+      </div>
 
     </Layout>
   )

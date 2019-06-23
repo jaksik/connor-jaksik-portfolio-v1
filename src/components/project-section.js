@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Row, Col, Collapse } from 'reactstrap'
-import Container from "./container"
+import Section from "./section"
 import Img from "gatsby-image"
 import projects from "../data/project-data.json"
 import "./style.css"
 
 
-class ProjectContainer extends Component {
+class ProjectSection extends Component {
     constructor(props) {
         super(props);
         this.categories = ["Show All", "HTML", "React", "MySQL", "Mongo DB"]
@@ -35,14 +35,14 @@ class ProjectContainer extends Component {
     render() {
         const projectImgs = this.props.projectImgs;
         return (
-            <Container background="#f6f6f6">
+            <Section background="#f6f6f6">
                 <div id="projects" name="projects">
                     <h2>Some of My Work</h2>
 
                     <Row>
                         <button onClick={this.toggleFilter}>Filter Projects</button>
                     </Row>
-                    
+
                     <Row>
                         <Collapse isOpen={this.state.filterOpen}>
                             <p>Show projects built using:</p>
@@ -84,10 +84,10 @@ class ProjectContainer extends Component {
                     </Row>
 
                 </div>
-            </Container>
+            </Section>
         )
     }
 }
 
-export default ProjectContainer
+export default ProjectSection
 

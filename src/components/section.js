@@ -7,7 +7,8 @@ const Layout = ({ children, ...props }) => {
         <div
             style={{
                 width: `100%`,
-                background: props.background
+                background: props.background,
+                backgroundImage: props.backgroundImage
             }}
         >
             <div
