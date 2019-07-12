@@ -1,6 +1,6 @@
 [
     {
-        "title": "Limitless Wake Tech",
+        "title": "Limitless Wake",
         "category": "React",
         "img": "limitless.png",
         "description": "The official site of Limitless Wake Technologies (wake board instructor for hire). Web site built with a React JS framework and hosted on Netlify.",
@@ -13,7 +13,7 @@
         "img": "gocode.png",
         "description": "A blazing fast blog about coding and emerging technologies. Powered by Gatsby JS, Graph QL and Mail Chimp.",
         "url": "https://gocodestuff.com",
-        "github": "https://github.com/jaksik/blog"
+        "github": "https://github.com/jaksik/go-code-stuff"
     },
     {
         "title": "Mountaineering Trivia",
@@ -29,22 +29,22 @@
         "img": "zoosnatch.png",
         "description": "Choose your own adventure game with an RPG interactive experience. Built with a React framework, user auth implemented with Mongo DB and interactive experience made possible with the HTML5 canvas element.",
         "url": "https://zoo-snatch.herokuapp.com",
-        "github": "https://github.com/jaksik/zoo-snatch"
+        "github": "https://github.com/jaksik/zoo-snatch-v2"
     },
     {
         "title": "Color Classifier",
         "category": "TensorFlow",
         "img": "colorclassifier.png",
-        "description": "A machine learning color classifier app that attempts to accurately place any chosen color in to one of nine categories. Powered by TensorFlow JS and inspired by The Coding Train from NYU.",
-        "url": "https://jaksik.github.io/ml-color-classifier/",
-        "github": "https://github.com/jaksik/ml-color-classifier"
+        "description": "A machine learning color classifier app that predicts the name of colors it's never seen before. Powered by TensorFlow JS and inspired by The Coding Train from NYU.",
+        "url": "https://jaksik.github.io/html-ml-classifier/",
+        "github": "https://github.com/jaksik/html-ml-classifier"
     },
     {
-        "title": "Task Tracker SQL",
+        "title": "Color Survey",
         "category": "MySQL",
-        "img": "tasktracker.png",
-        "description": "A 'To-Do' list application powered by MySQL.",
-        "url": "https://task-tracker-sql.herokuapp.com/",
-        "github": "https://github.com/jaksik/task-tracker-sql"
+        "img": "colorsurvey1.png",
+        "description": "A survey app to collect rgb color label data to be used in a machine learning activity. Uses Laravel and AWS MySQL.",
+        "url": "http://colorsurvey.xyz",
+        "github": "https://github.com/jaksik/color-survey"
     }
 ]

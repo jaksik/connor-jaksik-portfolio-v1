@@ -6,8 +6,6 @@ import CoverImg from "../components/cover-img"
 
 import About from "../components/about-section"
 import Projects from "../components/project-section"
-import Photos from "../components/photography-section"
-import Services from "../components/services-section"
 import ContactSection from "../components/contact-section"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
