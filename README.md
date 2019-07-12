@@ -25,3 +25,18 @@ _Checkout the live project at [connorjaksik.com](https://connorjaksik.com)._
 * Built with a React and Gatsby JS framework
 * Hosted on Netlify
 * Monitored with Google Analytics
+
+## The Evolution of my Portfolio
+
+<p width="49%">
+    <img alt="Connor Jaksik" src="./src/images/readme/portfolio-1.PNG" width="160" />
+</p>
+<p width="49%">
+    <img alt="Connor Jaksik" src="./src/images/readme/portfolio-2.PNG" width="160" />
+</p>
+<p width="49%">
+    <img alt="Connor Jaksik" src="./src/images/readme/portfolio-3.PNG" width="160" />
+</p>
+<p width="49%">
+    <img alt="Connor Jaksik" src="./src/images/readme/portfolio-4.PNG" width="160" />
+</p>
