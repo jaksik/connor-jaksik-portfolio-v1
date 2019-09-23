@@ -1,98 +1,36 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import CoverImg from "../components/cover-img"
-
-import About from "../components/about-section"
-import Projects from "../components/project-section"
-import ContactSection from "../components/contact-section"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./style.css"
+import './index.css'
 
-const IndexPage = ({ data }) => {
-
-  //Project Image data from query below
-  const { edges: projectImgData } = data.ProjectImgs;
-
-  //Photography Image data from query below
-  const { edges: photographyImgData } = data.Photography;
+const IndexPage = () => {
 
   return (
-    <Layout>
+    <>
 
-      {/* SEO keywords */}
-      <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
+        {/* SEO keywords */}
+        <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
 
-      {/* Cover Image */}
-      <CoverImg />
+        {/* Cover Video */}
+        <div className="cover-container">
+          <video autoplay="true" muted loop id="myVideo" style={{position:`fixed`}}>
+            <source type="video/mp4" src="https://mynewbucket20202.s3-eu-west-1.amazonaws.com/IMG_6212.mp4"/>
+            Your browser does not support HTML5 video.
+            </video>
+            <div className="overlay"></div>
+            <div className="heading" style={{position:`absolute`}}>
+              <h4 className="header-text"><b>Hello </b></h4> <br/>
+              <h1 className="header-text"><b>World</b></h1>
+              <a href="/web-development"><button>Web Development</button></a>
+              <a href="/adventuring"><button>Web Development</button></a>
+            </div>
+        </div>
 
-      {/* About Section */}
-      <div className="section-one">
-        <About />
-      </div>
-
-      <div style={{ background: `white` }}>
-
-        {/* Projects Section */}
-        <Projects projectImgs={projectImgData} />
-
-        {/* Services I provide for full stack web development */}
-
-        {/* <Photos photographyImgs={photographyImgData} /> */}
-
-        {/* Contact Section */}
-        <ContactSection />
-      </div>
-
-    </Layout>
+    </>
   )
 }
 
 export default IndexPage
 
-export const query = graphql`
-  query allImgsQuery {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-
-    ProjectImgs: allFile(
-      sort: { order: ASC, fields: [absolutePath] }
-      filter: { relativePath: { regex: "/projects/.*.png/" } }
-    ) {
-      edges {
-        node {
-          relativePath
-          name
-          childImageSharp {
-            sizes(maxWidth: 320) {
-              ...GatsbyImageSharpSizes
-            }
-          }
-        }
-      }
-    }
-
-    Photography: allFile(
-      sort: { order: ASC, fields: [absolutePath] }
-      filter: { relativePath: { regex: "/photography/.*.jpg/" } }
-    ) {
-      edges {
-        node {
-          relativePath
-          name
-          childImageSharp {
-            sizes(maxWidth: 600) {
-              ...GatsbyImageSharpSizes
-            }
-          }
-        }
-      }
-    }
-  }
-`;
