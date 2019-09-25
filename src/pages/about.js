@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql } from 'gatsby'
+import { Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import PageCoverImg from "../components/page-cover"
 import SEO from "../components/seo"
-import ContactSection from "../components/contact-section"
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 
@@ -17,7 +18,6 @@ const IndexPage = ({ data }) => {
         
        <PageCoverImg image={data.file.childImageSharp.fluid} title="Hello World"/>
 
-      <ContactSection/>
     </Layout>
   )
 }

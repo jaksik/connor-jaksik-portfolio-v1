@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import Navbar from "./navbar"
+import Navbar from "./nav"
 import CoverImg from "./cover-img"
 import "./layout.css"
 
@@ -36,7 +36,7 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
         </div>
-        <div style={{ 
+        {/* <div style={{ 
                 height: `100px`, 
                 background: `#718190`, 
                 color: `white`,
@@ -53,7 +53,7 @@ const Layout = ({ children }) => (
               Connor Jaksik
             </strong>
           </footer>
-        </div>
+        </div> */}
       </>
     )}
   />

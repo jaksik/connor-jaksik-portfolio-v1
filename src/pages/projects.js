@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql } from 'gatsby'
+import { Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import PageCoverImg from "../components/page-cover"
 import SEO from "../components/seo"
-import ContactSection from "../components/contact-section"
+import Projects from "../components/project-section"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 
@@ -16,8 +17,7 @@ const IndexPage = ({ data }) => {
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
         
        <PageCoverImg image={data.file.childImageSharp.fluid} title="Hello World"/>
-
-      <ContactSection/>
+        <Projects/>
     </Layout>
   )
 }

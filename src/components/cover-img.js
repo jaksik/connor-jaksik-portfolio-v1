@@ -25,7 +25,7 @@ const BackgroundSection = ({ className }) => (
                            className={className}
                            fluid={imageData}
                            backgroundColor={`#040e18`}
-                           style= {{position: `fixed`, zIndex: `-1`}}
+                           style= {{position: ``, zIndex: `-1`}}
           >
              <ScrollAnimate
              speed={1}
