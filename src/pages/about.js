@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
         {/* SEO keywords */}
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
         
-       <PageCoverImg image={data.file.childImageSharp.fluid} title="Hello World"/>
+       <PageCoverImg image={data.file.childImageSharp.fluid} title="Our Company"/>
 
     </Layout>
   )

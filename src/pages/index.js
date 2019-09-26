@@ -60,19 +60,6 @@ const IndexPage = ({ data }) => {
           </Row>
         </div>
 
-        <div className="slant" style={{background:``,}}>
-          <Row>
-            <Col xs="12" sm="6">
-              <h2>What We Do</h2>
-            </Col>
-            <Col xs="12" sm="6">
-              <ul>
-                <li>Web Development</li>
-                <li>Web Design</li>
-              </ul>
-            </Col>
-          </Row>
-        </div>
 
         {/* <div className="slant">
           <p>Staying on top of the tech trends and creating our own to provide an amazing experience</p>
