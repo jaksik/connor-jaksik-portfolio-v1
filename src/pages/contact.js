@@ -3,11 +3,10 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import PageCoverImg from "../components/page-cover"
 import SEO from "../components/seo"
-import ContactSection from "../components/contact-section"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css'
+import '../styles/index.css'
 
-const IndexPage = ({ data }) => {
+const ContactPage = ({ data }) => {
   console.log("data: ", data)
   return (
     <Layout>
@@ -17,12 +16,11 @@ const IndexPage = ({ data }) => {
         
        <PageCoverImg image={data.file.childImageSharp.fluid} title="Hello World"/>
 
-      <ContactSection/>
     </Layout>
   )
 }
 
-export default IndexPage
+export default ContactPage
 
 export const query = graphql`
   query {

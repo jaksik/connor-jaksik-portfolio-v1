@@ -1,13 +1,12 @@
 import React from "react"
-import { graphql, StaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 import { Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
-import CoverImg from "../components/cover-img"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css'
+import '../styles/index.css'
 
 const IndexPage = ({ data }) => {
   console.log("data: ", data)
@@ -23,7 +22,7 @@ const IndexPage = ({ data }) => {
         </div>
 
         <div className="slant" style={{background:``,}}>
-          <Row>
+          <Row className="no-gutters">
             <Col xs="12" sm="6">
               <h2>What We Do</h2>
             </Col>
@@ -47,7 +46,7 @@ const IndexPage = ({ data }) => {
         </div>
 
         <div>
-          <Row>
+          <Row className="no-gutters">
             <Col xs="6" sm="6">
               "also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." -- Chandler            
               </Col>

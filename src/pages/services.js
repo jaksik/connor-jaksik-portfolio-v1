@@ -6,9 +6,9 @@ import PageCoverImg from "../components/page-cover"
 import SEO from "../components/seo"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css'
+import '../styles/index.css'
 
-const IndexPage = ({ data }) => {
+const ServicesPage = ({ data }) => {
   console.log("data: ", data)
   return (
     <Layout>
@@ -72,7 +72,7 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export default IndexPage
+export default ServicesPage
 
 export const query = graphql`
   query {

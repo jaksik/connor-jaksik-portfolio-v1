@@ -1,5 +1,6 @@
 import React from "react"
 
+import styled from 'styled-components'
 
 import {
     Collapse,
@@ -14,7 +15,7 @@ import {
     DropdownMenu,
     DropdownItem } from 'reactstrap';
   
-  export default class Example extends React.Component {
+  class NavTwo extends React.Component {
     constructor(props) {
       super(props);
   
@@ -30,26 +31,26 @@ import {
     }
     render() {
       return (
-        <div style={{zIndex:`3`}}>
-          <Navbar color="light" light expand="md">
-            <NavbarBrand href="/">Summit Web</NavbarBrand>
+        <div style={{color:`white`}} style={{zIndex:`3`}}>
+          <Navbar className="text-white" color="dark" light expand="md">
+            <NavbarBrand href="/" style={{color:`white`}}>Summit Web</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
               <NavItem>
-                  <NavLink href="/projects/">Projects</NavLink>
+                  <NavLink style={{color:`white`}} href="/projects/">Projects</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/services/">Services</NavLink>
+                  <NavLink style={{color:`white`}} href="/services/">Services</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/process/">Process</NavLink>
+                  <NavLink style={{color:`white`}} href="/process/">Process</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/about/">About</NavLink>
+                  <NavLink style={{color:`white`}} href="/about/">About</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/contact/">Contact</NavLink>
+                  <NavLink style={{color:`white`}} href="/contact/">Contact</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
@@ -58,3 +59,9 @@ import {
       );
     }
   }
+
+const StyledNav = styled(NavTwo)`
+  color: white;
+`
+
+export default StyledNav

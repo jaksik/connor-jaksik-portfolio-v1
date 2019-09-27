@@ -1,8 +1,9 @@
 import React from 'react'
 import { Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import './footer.css'
 
 const Footer = () => (
-    <div style={{background:`lightBlue`}}>
+    <div style={{background:`#228b22`}}>
 
         <Row className="no-gutters">
 

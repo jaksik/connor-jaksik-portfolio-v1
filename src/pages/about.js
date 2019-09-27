@@ -1,14 +1,15 @@
 import React from "react"
 import { graphql } from 'gatsby'
-import { Row, Col } from "reactstrap"
+import { Button } from "reactstrap"
 import Layout from "../components/layout"
 import PageCoverImg from "../components/page-cover"
+import resume from "../data/resume.pdf"
 import SEO from "../components/seo"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css'
+import '../styles/index.css'
 
-const IndexPage = ({ data }) => {
+const AboutPage = ({ data }) => {
   console.log("data: ", data)
   return (
     <Layout>
@@ -17,12 +18,16 @@ const IndexPage = ({ data }) => {
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
         
        <PageCoverImg image={data.file.childImageSharp.fluid} title="Our Company"/>
+       
+       <a href={resume} download >
+          <Button color="info" id="resume-button">Resume</Button>
+      </a>
 
     </Layout>
   )
 }
 
-export default IndexPage
+export default AboutPage
 
 export const query = graphql`
   query {
