@@ -1,0 +1,14 @@
+[
+    {
+        "category": "Design",
+        "services": ["Wireframing", "UI & UX", "Content Creation", "Email Design"]
+    },
+    {
+        "category": "Marketing",
+        "services": ["SEO", "Email Marketing", "Email Design"]
+    },
+    {
+        "category": "Technology",
+        "services": ["Front & Back-end Development", "Integrations", "Hosting", "Mobile Apps"]
+    }
+]
