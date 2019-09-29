@@ -16,7 +16,6 @@ const IndexPage = ({ data }) => {
         {/* SEO keywords */}
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
         
-
         <div className="img-one">
           <Img fluid={data.mobileImage.childImageSharp.fluid}/>
         </div>
@@ -58,20 +57,6 @@ const IndexPage = ({ data }) => {
               </Col>
           </Row>
         </div>
-
-
-        {/* <div className="slant">
-          <p>Staying on top of the tech trends and creating our own to provide an amazing experience</p>
-        </div>
-
-        <div className="">
-          <h2>What We Do</h2>
-          <ul>
-            <li>Web Development</li>
-            <li>Web Design</li>
-          </ul>
-        </div> */}
-
     </Layout>
   )
 }

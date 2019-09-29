@@ -4,7 +4,7 @@ import { Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import PageCoverImg from "../components/page-cover"
 import SEO from "../components/seo"
-import serviceData from "../data/service-data"
+import servicesData from "../data/service-data"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/index.css'
 
@@ -26,17 +26,15 @@ const ServicesPage = ({ data }) => {
                   <h2>{service.category}</h2>
                 </Col>
               </Row>
-              {/* <Row>
-               <ul>
+              <Row className="no-gutters">
                {service.services.map((item, i) => {
                   return (
                     <Col xs="12" sm="6">
-                        <li>{item}</li>
+                        <p style={{textAlign:`center`}}>{item}</p>
                     </Col>
                   )
                 })}
-               </ul>
-              </Row> */}
+              </Row>
             </>
           )
         })}

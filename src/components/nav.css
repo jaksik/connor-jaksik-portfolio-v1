@@ -1,3 +1,7 @@
 .nav-item {
     color: white;
 }
+
+.navbar-toggler {
+    border-color: white;
+}

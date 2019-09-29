@@ -9,7 +9,7 @@ const Footer = () => (
 
             <Col xs="12" md="3" className="offset-md-1">
                 <h2 style={{textAlign:`center`}}>Summit</h2>
-                <p>remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pu</p>
+                <p className="header-text">remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pu</p>
             </Col>
 
             <Col xs="12" md="8">
@@ -17,21 +17,18 @@ const Footer = () => (
                     <Form inline>
                         <Col xs="12" md="5">
                             <FormGroup>
-                                <Label for="firstName" hidden>Email</Label>
-                                <Input type="text" name="first" id="firstName" placeholder="First Name" />
+                                <Input className="footer-input"  type="text" name="first" id="firstName" placeholder="First Name" style={{background:`none`, color:`white`}}/>
                             </FormGroup>
                         </Col>
                             {' '}
                         <Col xs="12" md="5">
                             <FormGroup>
-                                <Label for="lastName" hidden>Email</Label>
                                 <Input type="text" name="last" id="lastName" placeholder="Last Name" />
                             </FormGroup>
                         </Col>
                             {' '}
                         <Col xs="12" md="5">
                             <FormGroup>
-                                <Label for="exampleEmail" hidden>Email</Label>
                                 <Input type="email" name="email" id="exampleEmail" placeholder="Email" />
                             </FormGroup>
                         </Col>

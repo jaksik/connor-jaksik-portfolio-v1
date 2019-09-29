@@ -36,24 +36,6 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
         </div>
-        {/* <div style={{ 
-                height: `100px`, 
-                background: `#718190`, 
-                color: `white`,
-                paddingTop: `20px` 
-              }}>
-          <footer
-            style={{
-              textAlign: `center`,
-              width: `100%`
-            }}>
-            <strong>
-              © {new Date().getFullYear()}, Built by
-    {` `}
-              Connor Jaksik
-            </strong>
-          </footer>
-        </div> */}
         <Footer/>
       </>
     )}
