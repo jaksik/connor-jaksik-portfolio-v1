@@ -1,6 +1,6 @@
 import React from "react"
-import { graphql } from 'gatsby'
-import { Row, Col } from "reactstrap"
+import { graphql, Link } from 'gatsby'
+import { Container, Row, Col, Button } from "reactstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
@@ -15,47 +15,55 @@ const IndexPage = ({ data }) => {
 
         {/* SEO keywords */}
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
-        
+
         <div className="img-one">
           <Img fluid={data.mobileImage.childImageSharp.fluid}/>
         </div>
 
-        <div className="slant" style={{background:``,}}>
-          <Row className="no-gutters">
-            <Col xs="12" sm="6">
-              <h2>What We Do</h2>
-            </Col>
-            <Col xs="6" sm="3">
-              <ul>
-                <li>Web Development</li>
-                <li>Web Design</li>
-              </ul>
-            </Col>
-            <Col xs="6" sm="3">
-              <ul>
-                <li>Consulting</li>
-                <li>SEO</li>
-              </ul>
-            </Col>
-          </Row>
-        </div>
+        <div className="slant">
+          <Container>
+            <Row className="no-gutters justify-content-center" style={{padding:`30px`}}>
+                <h2>How can we help you?</h2>
+                <div className="w-100"></div>
+                <div style={{maxWidth:`600px`}}>
+                  <p>We'll identify your pain points, collaborate with you to define the real problems, and deliver digital solutions that support your business strategies.</p>
+                </div>
+                <div className="w-100"></div>
+                <Link to="/services">
+                  <Button color="success">Capabilities & Services</Button>
+                </Link>
+            </Row>
 
-        <div>
-          <h2>Staying on top of tech trends so you dont have to</h2>
-        </div>
+            <Row className="no-gutters justify-content-center" style={{padding:`30px`}}>
+              <Col xs="12" md="4">
+                <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
+                <h5>Creative</h5>
+                <p>Building the functionality, tools, and assets to fashion a look, feel, tone and experience consistent with your brand and your mission.</p>
+              </Col>
+              <Col xs="12" md="4">
+                <Img fluid={data.marketing.childImageSharp.fluid} className="landing-image"/>
+                <h5>Marketing</h5>
+                <p>Creating seamless, reliable and effective solutions from engagement through post-purchase delight and back again.</p>
+              </Col>
+              <Col xs="12" md="4">
+                <Img fluid={data.technology.childImageSharp.fluid} className="landing-image"/>
+                <h5>Technology</h5>
+                <p>Smart, strategic thinking that provides a pathway and a plan to successfully grow your business and your brand.</p>
+              </Col>
+            </Row>
 
-        <div>
-          <Row className="no-gutters">
-            <Col xs="6" sm="6">
-              "also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." -- Chandler            
-              </Col>
-              <Col xs="6" sm="6">
-              "also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." -- Chandler            
-              </Col>
-              <Col xs="6" sm="6">
-              "also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." -- Chandler            
-              </Col>
-          </Row>
+            <Row className="no-gutters justify-content-center" style={{padding:`30px`}}>
+              <h6>PORTFOLIO</h6>
+              <div className="w-100"></div>
+
+              <h4>Need proof?</h4>
+              <div className="w-100"></div>
+
+              <Link to="/projects">
+                  <Button color="success">See Our Work</Button>
+                </Link>
+            </Row>
+          </Container>
         </div>
     </Layout>
   )
@@ -65,7 +73,28 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    mobileImage: file(relativePath: { eq: "mountain-top.jpg" }) {
+    mobileImage: file(relativePath: { eq: "capital.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    creative: file(relativePath: { eq: "creative.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    marketing: file(relativePath: { eq: "marketing.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    technology: file(relativePath: { eq: "technology.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid

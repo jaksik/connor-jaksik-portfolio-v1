@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from 'gatsby'
 import { Row, Col } from "reactstrap"
 import Layout from "../components/layout"
-import PageCoverImg from "../components/page-cover"
+import PageHeader from "../components/page-header"
 import SEO from "../components/seo"
 import servicesData from "../data/service-data"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,20 +16,18 @@ const ServicesPage = ({ data }) => {
         {/* SEO keywords */}
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
         
-       <PageCoverImg image={data.file.childImageSharp.fluid} title="What We Do"/>
+       <PageHeader image={data.file.childImageSharp.fluid} title="Capabilities and Services" subtitle="What We Do" description="The first thing we do is get know everything about your business. We learn what you do, how you do it, and (most importantly) why you do it. That's B1O2. Then we get busy. Really busy."/>
 
         {servicesData.map((service, index) => {
           return (
             <>
               <Row className="no-gutters justify-content-center">
-                <Col>
                   <h2>{service.category}</h2>
-                </Col>
               </Row>
-              <Row className="no-gutters">
+              <Row className="no-gutters justify-content-center">
                {service.services.map((item, i) => {
                   return (
-                    <Col xs="12" sm="6">
+                    <Col xs="12" sm="6" md="4">
                         <p style={{textAlign:`center`}}>{item}</p>
                     </Col>
                   )

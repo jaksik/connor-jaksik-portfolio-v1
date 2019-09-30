@@ -1,26 +1,15 @@
-/* .slant {
-    margin-top: -20px;
-    position: relative;
-    z-index: 1;
-  }
-
-.slant:before {
-  background: inherit;
-  top: 0;
-  content: '';
-  display: block;
-  height: 50%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  transform: skewY(1.5deg);
-  transform-origin: 100% 0;
-  z-index: -1;
-} */
-
 .header-text {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+  text-align: center;
+}
+
+.landing-image {
+  width: 250px;
+  margin: 0 auto;
+}
+
+h5, h2, p {
   text-align: center;
 }

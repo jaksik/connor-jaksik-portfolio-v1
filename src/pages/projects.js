@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PageCoverImg from "../components/page-cover"
+import PageHeader from "../components/page-header"
 
 import Projects from "../components/project-section"
 
@@ -18,7 +18,7 @@ const WorkPage = ({ data }) => {
 
       {/* SEO keywords */}
       <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
-      <PageCoverImg image={data.file.childImageSharp.fluid} title="What We Do"/>
+      <PageHeader image={data.file.childImageSharp.fluid} title="What We Do"/>
 
       <div style={{ background: `white` }}>
 

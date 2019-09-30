@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from 'gatsby'
 import { Button } from "reactstrap"
 import Layout from "../components/layout"
-import PageCoverImg from "../components/page-cover"
+import PageHeader from "../components/page-header"
 import resume from "../data/resume.pdf"
 import SEO from "../components/seo"
 
@@ -17,7 +17,7 @@ const AboutPage = ({ data }) => {
         {/* SEO keywords */}
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
         
-       <PageCoverImg image={data.file.childImageSharp.fluid} title="Our Company"/>
+       <PageHeader image={data.file.childImageSharp.fluid} title="Our Company" subtitle="Our Culture, Team, and Careers" description="Hello this is what we do and how we do it"/>
        
        <a href={resume} download >
           <Button color="info" id="resume-button">Resume</Button>
