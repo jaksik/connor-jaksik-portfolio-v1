@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from 'gatsby'
 import { Container, Row, Col, Button } from "reactstrap"
+import Carousel from "../components/carousel"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
@@ -16,8 +17,15 @@ const IndexPage = ({ data }) => {
         {/* SEO keywords */}
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
 
-        <div className="img-one">
-          <Img fluid={data.mobileImage.childImageSharp.fluid}/>
+        <div style={{position: `relative`, height: `65vh`, overflow:`hidden`}}>
+         <Img fluid={data.mobileImage.childImageSharp.fluid} style={{position: `absolute`, zIndex:`1`, height: `65vh`, width: `100%`}}/>
+         <div className="header-overlay"></div>
+         <div className="header-title" style={{width: `100%`}}>
+            <h5>OUR WHY</h5>
+            <h1>BUSINESS FIRST. <br/>ONLINE SECOND.</h1>
+            <h5>We're an employee only full service agency specializing in ecommerce and strategic digital experiences.</h5>
+            <Button style={{marginRight:`25px`}} color="success">Our Work</Button><Button outline color="success">Our Work</Button>
+         </div>
         </div>
 
         <div className="slant">
@@ -62,6 +70,10 @@ const IndexPage = ({ data }) => {
               <Link to="/projects">
                   <Button color="success">See Our Work</Button>
                 </Link>
+            </Row>
+
+            <Row className="no-gutters">
+              <Carousel/>
             </Row>
           </Container>
         </div>

@@ -5,8 +5,8 @@ import './footer.css'
 const Footer = () => (
     <div style={{background:`#93da49`, paddingTop: `50px`}}>
 
+        {/* Form Row */}
         <Row className="no-gutters">
-
             <Col xs="12" md="3" className="offset-md-1">
                 <h2 style={{textAlign:`center`}}>Go ahead, ask us anything!</h2>
                 <p className="header-text">Anything at all.</p>
@@ -41,9 +41,38 @@ const Footer = () => (
                     </Form>
                 </Row>
             </Col>
-           
         </Row>
 
+        {/* Social Row */}
+        <Row className="no-gutters">
+            <Col xs="12" md="2" className="offset-md-1">
+                <Row className="no-gutters justify-content-center">
+                    <img style={{maxWidth:`30px`}} src="https://cdn2.iconfinder.com/data/icons/harmonicons-04/64/instagram-512.png"/>
+                    <img style={{maxWidth:`30px`}} src="https://image.flaticon.com/icons/png/512/33/33702.png"/>
+                    <img style={{maxWidth:`30px`}} src="https://cdn2.iconfinder.com/data/icons/harmonicons-04/64/instagram-512.png"/>
+                    <img style={{maxWidth:`30px`}} src="https://image.flaticon.com/icons/png/512/33/33702.png"/>
+                </Row>
+            </Col>
+
+            <Col xs="11" md="2" className="offset-1 offset-md-0">
+                <p>420 Summit Blvd <br/>
+                    Frisco, CO 80223
+                </p>
+            </Col>
+
+            <Col xs="11" md="2" className="offset-1 offset-md-0">
+                <p>777-777-7777</p>
+                <p>info@summitweb.com</p>
+            </Col>
+
+
+            <Col xs="12" md="3">
+              <Row className="no-gutters justify-content-center">
+                <Button>Support</Button>
+                <Button>Payments</Button>
+              </Row>
+            </Col>
+        </Row>
         <p style={{textAlign:`center`, padding:`50px`}}>© 2019 Connor Jaksik All Rights (and some wrongs) Reserved. For those of you in the Witness Protection Program, here's our Privacy Policy.</p>
     </div>
 )
