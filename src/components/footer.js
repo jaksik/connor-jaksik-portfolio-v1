@@ -3,7 +3,7 @@ import { Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './footer.css'
 
 const Footer = () => (
-    <div style={{background:`#93da49`, paddingTop: `50px`}}>
+    <div style={{background:`#325da5`, paddingTop: `50px`, color:`white`}}>
 
         {/* Form Row */}
         <Row className="no-gutters">
@@ -35,7 +35,7 @@ const Footer = () => (
                             {' '}
                         <Col xs="12">
                             <Row className="no-gutters justify-content-center justify-content-xs-start">
-                                <Button outline color="success">Submit</Button>
+                                <Button color="success">Submit</Button>
                             </Row>
                         </Col>
                     </Form>
@@ -68,12 +68,12 @@ const Footer = () => (
 
             <Col xs="12" md="3">
               <Row className="no-gutters justify-content-center">
-                <Button>Support</Button>
+                <Button style={{marginRight:`20px`}}>Support</Button>
                 <Button>Payments</Button>
               </Row>
             </Col>
         </Row>
-        <p style={{textAlign:`center`, padding:`50px`}}>© 2019 Connor Jaksik All Rights (and some wrongs) Reserved. For those of you in the Witness Protection Program, here's our Privacy Policy.</p>
+        <p style={{textAlign:`center`, padding:`50px`, marginBottom:`0`}}>© 2019 Connor Jaksik All Rights (and some wrongs) Reserved. For those of you who are interested here's our Privacy Policy.</p>
     </div>
 )
 

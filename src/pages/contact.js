@@ -24,7 +24,7 @@ export default ContactPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "mountain-top.jpg" }) {
+    file(relativePath: { eq: "capital.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid

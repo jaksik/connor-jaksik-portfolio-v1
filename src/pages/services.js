@@ -25,13 +25,13 @@ const ServicesPage = ({ data }) => {
                   <h2>{service.category}</h2>
               </Row>
               <Row className="no-gutters justify-content-center">
-               {service.services.map((item, i) => {
-                  return (
-                    <Col xs="12" sm="6" md="4">
-                        <p style={{textAlign:`center`}}>{item}</p>
-                    </Col>
-                  )
-                })}
+              <ul>
+                {service.services.map((item, i) => {
+                    return (
+                          <li style={{textAlign:`center`}}>{item}</li>
+                    )
+                  })}
+              </ul>
               </Row>
             </>
           )
@@ -44,7 +44,7 @@ export default ServicesPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "mountain-top.jpg" }) {
+    file(relativePath: { eq: "capital.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid

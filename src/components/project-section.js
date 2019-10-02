@@ -39,7 +39,7 @@ class ProjectSection extends Component {
                 <div id="projects" name="projects">
                     <h2>Some of My Work</h2>
 
-                    <Row>
+                    {/* <Row>
                         <button onClick={this.toggleFilter}>Filter Projects</button>
                     </Row>
 
@@ -54,7 +54,7 @@ class ProjectSection extends Component {
                                 })}
                             </div>
                         </Collapse>
-                    </Row>
+                    </Row> */}
 
                     <Row style={{ paddingTop: `40px` }}>
                         {this.state.displayedProjects.map(project => {

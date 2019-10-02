@@ -72,10 +72,13 @@ const IndexPage = ({ data }) => {
                 </Link>
             </Row>
 
-            <Row className="no-gutters">
-              <Carousel/>
-            </Row>
+           
           </Container>
+          <Row className="no-gutters justify-content-center">
+              <div style={{maxWidth:`960px`}}>
+              <Carousel/>
+              </div>
+            </Row>
         </div>
     </Layout>
   )
