@@ -1,6 +1,5 @@
 import React from "react"
 import "./nav.css"
-import styled from 'styled-components'
 
 import {
     Collapse,
@@ -9,13 +8,9 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
+    NavLink } from 'reactstrap';
   
-  class NavTwo extends React.Component {
+  class Mainnav extends React.Component {
     constructor(props) {
       super(props);
   
@@ -38,7 +33,7 @@ import {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar >
               <NavItem>
-                  <NavLink style={{color:`white`}} href="/projects/">Projects</NavLink>
+                  <NavLink style={{color:`white`}} href="/work/">Work</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink style={{color:`white`}} href="/services/">Services</NavLink>
@@ -47,7 +42,10 @@ import {
                   <NavLink style={{color:`white`}} href="/process/">Process</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink style={{color:`white`}} href="/about/">About</NavLink>
+                  <NavLink style={{color:`white`}} href="/company/">Company</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink style={{color:`white`}} href="/news/">News</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="end-navitem" style={{color:`white`}} href="/contact/">Contact</NavLink>
@@ -60,8 +58,5 @@ import {
     }
   }
 
-const StyledNav = styled(NavTwo)`
-  color: white;
-`
 
-export default StyledNav
+export default Mainnav

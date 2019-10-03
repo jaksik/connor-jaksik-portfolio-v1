@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './footer.css'
 
@@ -33,15 +34,21 @@ const Footer = () => (
                             </FormGroup>
                         </Col>
                             {' '}
-                        <Col xs="12">
+                        <Col xs="12" md="10">
                             <Row className="no-gutters justify-content-center justify-content-xs-start">
-                                <Button color="success">Submit</Button>
+                                <Button color="success" style={{margin:`20px`, width: `150px`}}>Submit</Button>
                             </Row>
                         </Col>
                     </Form>
                 </Row>
             </Col>
         </Row>
+
+        <Row className="no-gutters">
+            <div style={{borderBottom:`1px solid white`, width:`80%`, margin:`0 auto 30px`, color:`blue`}}>.</div>
+        </Row>
+
+
 
         {/* Social Row */}
         <Row className="no-gutters">
@@ -68,8 +75,13 @@ const Footer = () => (
 
             <Col xs="12" md="3">
               <Row className="no-gutters justify-content-center">
-                <Button style={{marginRight:`20px`}}>Support</Button>
-                <Button>Payments</Button>
+                <Link to="/support">
+                    <Button style={{marginRight:`20px`}}>Support</Button>
+                </Link>
+
+                <Link to="/payments">
+                    <Button>Payments</Button>
+                </Link>
               </Row>
             </Col>
         </Row>

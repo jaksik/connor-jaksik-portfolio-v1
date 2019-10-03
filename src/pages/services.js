@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from 'gatsby'
-import { Row, Col } from "reactstrap"
+import { Row, Col, Container } from "reactstrap"
 import Layout from "../components/layout"
 import PageHeader from "../components/page-header"
 import SEO from "../components/seo"
@@ -18,24 +18,30 @@ const ServicesPage = ({ data }) => {
         
        <PageHeader image={data.file.childImageSharp.fluid} title="Capabilities and Services" subtitle="What We Do" description="The first thing we do is get know everything about your business. We learn what you do, how you do it, and (most importantly) why you do it. That's B1O2. Then we get busy. Really busy."/>
 
-        {servicesData.map((service, index) => {
+        <Container>
+        {servicesData.map((category, index) => {
+          console.log("Category: ", category)
           return (
-            <>
               <Row className="no-gutters justify-content-center">
-                  <h2>{service.category}</h2>
-              </Row>
-              <Row className="no-gutters justify-content-center">
-              <ul>
-                {service.services.map((item, i) => {
+                <Col xs="12">
+                  <h2>{category.title}</h2>
+                </Col>
+                {category.subcategories.map((subcategory, i) => {
                     return (
-                          <li style={{textAlign:`center`}}>{item}</li>
+                      <Col xs="12" md="4">
+                          <h6>{subcategory.title}</h6>
+                          <ul>
+                            {subcategory.services.map((service) => (
+                              <li>{service}</li>
+                            ))}
+                          </ul>
+                      </Col>
                     )
                   })}
-              </ul>
               </Row>
-            </>
           )
         })}
+        </Container>
     </Layout>
   )
 }

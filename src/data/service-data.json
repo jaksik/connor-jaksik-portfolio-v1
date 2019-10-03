@@ -1,14 +1,36 @@
 [
     {
-        "category": "Creative",
-        "services": ["Wireframing", "UI & UX Design", "Content Creation", "Email Design"]
+        "title": "Marketing",
+        "subcategories": [
+            {
+                "title": "Paid Media Management",
+                "services": ["Channel strategy (PPC, Social)", "Media planning", "Reporting & insights"]
+            },
+            {
+                "title": "Digital Marketing",
+                "services": ["Campaign planning", "Ecommerce & channel strategy", "Email strategy & execution"]
+            },
+            {
+                "title": "Onsite Optimization",
+                "services": ["Search Engine Optimization", "Conversion rate optimization", "Analytics & Insights"]
+            }
+        ]
     },
     {
-        "category": "Marketing",
-        "services": ["SEO", "Email Marketing", "Email Design"]
-    },
-    {
-        "category": "Technology",
-        "services": ["Front & Back-end Development", "Integrations", "Hosting", "Mobile Apps"]
+        "title": "Technology",
+        "subcategories": [
+            {
+                "title": "Website Development",
+                "services": ["Front and back-end website development", "Re-platforming and site migrations", "Cross-browser compatibility"]
+            },
+            {
+                "title": "Integrations",
+                "services": ["Ecommerce configurations", "Social platform integrations"]
+            },
+            {
+                "title": "Support, Maintenance, & Hosting",
+                "services": ["Technology audits/roadmaps", "Security", "Load testing & scaling", "Hosting and domain services"]
+            }
+        ]
     }
 ]
