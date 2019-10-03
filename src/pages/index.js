@@ -74,12 +74,22 @@ const IndexPage = ({ data }) => {
 
            
           </Container>
+
+          
+
+
           <Row className="no-gutters justify-content-center">
               <div style={{maxWidth:`960px`}}>
               <Carousel/>
               </div>
             </Row>
         </div>
+       <div className="">
+       <video autoplay="true" muted loop id="">
+            <source type="video/mp4" src="https://mynewbucket20202.s3-eu-west-1.amazonaws.com/IMG_6212.mp4"/>
+            Your browser does not support HTML5 video.
+            </video>
+       </div>
     </Layout>
   )
 }
