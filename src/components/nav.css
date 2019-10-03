@@ -5,3 +5,56 @@
 .navbar-toggler {
     border-color: white;
 }
+
+.start-navitem {
+    padding-right: 35px;
+}
+
+.end-navitem {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 821px) {
+    .nav-item {
+        padding-right: 13px
+    }
+
+    .navbar-brand {
+        padding-left: 13px
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .nav-item {
+        padding-right: 20px
+    }
+
+    .navbar-brand {
+        padding-left: 20px
+    }
+}
+
+@media screen and (min-width: 991px) {
+    /* /* .start-navitem {
+        margin-left: 150px;
+    } */
+   
+    .nav-item {
+        padding-right: 35px
+    }
+
+    .navbar-brand {
+        padding-left: 35px
+    }
+  }
+/* 
+  @media screen and (min-width: 1200px) {
+   
+    .nav-item {
+        padding-right: 155px
+    }
+
+    .navbar-brand {
+        padding-left: 155px
+    }
+  } */

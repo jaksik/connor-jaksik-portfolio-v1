@@ -3,7 +3,7 @@ import { Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './footer.css'
 
 const Footer = () => (
-    <div style={{background:`#325da5`, paddingTop: `50px`, color:`white`}}>
+    <div style={{background:`#1c67a9`, paddingTop: `50px`, color:`white`}}>
 
         {/* Form Row */}
         <Row className="no-gutters">

@@ -1,5 +1,5 @@
 import React from "react"
-
+import "./nav.css"
 import styled from 'styled-components'
 
 import {
@@ -33,10 +33,10 @@ import {
       return (
         <div style={{color:`white`}} style={{zIndex:`3`}}>
           <Navbar className="text-white" color="dark" light expand="md">
-            <NavbarBrand href="/" style={{color:`white`}}>Summit Web</NavbarBrand>
+            <NavbarBrand className="start-navitem" href="/" style={{color:`white`}}>Summit Web</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav className="ml-auto" navbar >
               <NavItem>
                   <NavLink style={{color:`white`}} href="/projects/">Projects</NavLink>
                 </NavItem>
@@ -50,7 +50,7 @@ import {
                   <NavLink style={{color:`white`}} href="/about/">About</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink style={{color:`white`}} href="/contact/">Contact</NavLink>
+                  <NavLink className="end-navitem" style={{color:`white`}} href="/contact/">Contact</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
