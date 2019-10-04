@@ -14,7 +14,7 @@ const ContactPage = ({ data }) => {
         {/* SEO keywords */}
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
         
-       <PageHeader image={data.file.childImageSharp.fluid} title="Hello World"/>
+       <PageHeader image={data.contactImage.childImageSharp.fluid} title="Hello World"/>
 
     </Layout>
   )
@@ -24,7 +24,7 @@ export default ContactPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "capital.jpg" }) {
+    contactImage: file(relativePath: { eq: "capital.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid

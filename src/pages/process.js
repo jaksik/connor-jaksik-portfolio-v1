@@ -18,7 +18,7 @@ const AboutPage = ({ data }) => {
         {/* SEO keywords */}
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
         
-       <PageHeader image={data.file.childImageSharp.fluid} title="Our Company" subtitle="Our Culture, Team, and Careers" description="Marketing maven Simon Sinek was the first to explore the “Start with Why” concept and “The Golden Circle” model, challenging us to examine the emotional core of what makes employees and customers buy into a company.  We’ve taken it a step further. "/>
+       <PageHeader image={data.processImage.childImageSharp.fluid} title="Our Company" subtitle="Our Culture, Team, and Careers" description="Marketing maven Simon Sinek was the first to explore the “Start with Why” concept and “The Golden Circle” model, challenging us to examine the emotional core of what makes employees and customers buy into a company.  We’ve taken it a step further. "/>
        
        <Container>
           <Row>
@@ -94,7 +94,7 @@ export default AboutPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "mountain-top.jpg" }) {
+    processImage: file(relativePath: { eq: "mountain-top.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid
