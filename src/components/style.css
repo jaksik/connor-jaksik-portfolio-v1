@@ -1,67 +1,67 @@
 .project-card {
-    width: 100%;
-    max-width: 320px;
-    height: 420px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    text-align: left;
-    border: thin solid rgba(51,122,183,.1);
-    border-radius: 5px;
-    box-shadow: 0 12px 12px 0 #d3d3d3;
-    box-sizing: border-box;
-    background-color: #fff;
-    font-size: 14px;
-    font-weight: 300;
+  width: 100%;
+  max-width: 320px;
+  height: 420px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: left;
+  border: thin solid rgba(51,122,183,.1);
+  border-radius: 5px;
+  box-shadow: 0 12px 12px 0 #d3d3d3;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .service-item {
-    border-bottom: 1px solid  #343a40;
-    padding: .5rem;    
+  border-bottom: 1px solid  #343a40;
+  padding: .5rem;    
 }
 
 .service-item:hover{
-    background-color: #ece9e9;
+  background-color: #ece9e9;
 }
 
 .services-container {
-    max-width: 60%;
-    margin: 0 auto 30px;
-    border: 1px solid  #343a40;
-    background-color: #f6f6f6;
-    box-shadow: 0 -1px 4px #343a40;
+  max-width: 60%;
+  margin: 0 auto 30px;
+  border: 1px solid  #343a40;
+  background-color: #f6f6f6;
+  box-shadow: 0 -1px 4px #343a40;
 }
 
 .photography-header {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
 .gallery {
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-    margin: 0 auto;
-  }
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  margin: 0 auto;
+}
 
 .photography-img {
-  margin: 5px 0px;
+margin: 5px 0px;
 }
 
 
 @media only screen and (max-width: 768px) {
-    .faqContainer {
-        max-width: 80%;
-    }
+  .faqContainer {
+      max-width: 80%;
+  }
 
-    h2 {
-      text-align: center;
-    }
+  h2 {
+    text-align: center;
+  }
 
-  } 
+}
